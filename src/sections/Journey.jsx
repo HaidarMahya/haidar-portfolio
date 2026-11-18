@@ -33,17 +33,16 @@ const Polaroid = ({ p, i, onOpen }) => (
   >
     <div className="relative bg-transparent group-hover:bg-cream/10 transition-colors duration-300">
       <div className="relative z-10">
+        {/* Foto diganti menjadi foto Anda */}
         <img
-          src={p.src}
+          src="5cfe876b-099c-4126-830f-d83b0b6ba183.webp"
           alt={p.alt}
           loading="lazy"
           className="block w-full object-cover aspect-square transition-transform duration-500 group-hover:scale-[1.02]"
         />
-
         {/* Caption Retro di dalam Frame Gambar */}
       </div>
     </div>
-
   </motion.figure>
 );
 
@@ -107,8 +106,9 @@ function Lightbox({ i, set }) {
           >
             {/* Dihapus: border-8 dan border-cream, sehingga tidak ada bingkai pada gambar */}
             <div className="relative bg-night p-4 md:p-6">
+              {/* Foto di Lightbox juga diganti menjadi foto Anda */}
               <img
-                src={p.src}
+                src="5cfe876b-099c-4126-830f-d83b0b6ba183.webp"
                 alt={p.alt}
                 className="max-h-[70svh] w-full object-cover"
               />
